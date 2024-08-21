@@ -1,0 +1,52 @@
+/* Estilos para telas menores que 480px (celulares) */
+@media screen and (max-width: 480px) {
+  .sementinha-parallax {
+    height: 700px;
+  }
+
+  .main-content {
+    gap: 30px;
+  }
+
+  #title-content {
+    width: 70%;
+    padding: 10px;
+    margin-top: 50px;
+    box-shadow: none;
+    border-bottom: 4px solid rgba(236, 30, 30, 0.1);
+    border-radius: 10px;
+  }
+
+  #subtitle-content {
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  #paragraph-content {
+    padding: 0;
+    width: 90%;
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .iframe-spotify {
+    width: 90%;
+  }
+
+  .youtube-player {
+    width: 90%;
+    height: 30%;
+  }
+
+  #paragraph-content-speak {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .youtube-player {
+    width: 90%;
+  }
+}

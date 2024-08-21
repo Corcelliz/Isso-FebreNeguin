@@ -1,0 +1,306 @@
+main {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-ul-desktop {
+  display: flex;
+  justify-content: space-evenly;
+  width: 20%;
+  align-items: center;
+  height: 75px;
+}
+
+.nav-ul-desktop li {
+  list-style: none;
+  display: flex;
+  margin: auto;
+}
+
+.nav-ul-desktop a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.2s ease-in;
+  font-style: oblique;
+  font-size: 17px;
+}
+
+.nav-ul-desktop a:hover {
+  color: #e92324;
+}
+
+.nav-ul {
+  max-height: 0; /* Começa colapsado */
+  overflow: hidden; /* Oculta o conteúdo fora do limite */
+  flex-direction: column;
+  width: 100%;
+  background-color: #333;
+  position: absolute;
+  top: 75px;
+  right: 0;
+  padding: 0;
+  border-radius: 0 0 8px 8px;
+  opacity: 0;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.nav-hidden {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.febre-logo {
+  width: 90px;
+  height: 75px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.febre-tag {
+  width: 140px;
+  height: 55px;
+}
+
+.nav-hidden-link {
+  align-items: center;
+  display: flex;
+  height: 75px;
+}
+
+.nav-ul li {
+  list-style: none;
+}
+
+/* Links de navegação */
+.nav-ul a {
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.2s ease-in;
+  font-style: oblique;
+  font-size: 17px;
+}
+
+.nav-ul a:hover {
+  color: #e92324;
+}
+
+/* Estilos para o botão hamburguer */
+.hamburger {
+  display: none; /* Oculto por padrão */
+}
+
+.parallax-container {
+  background-image: url(../img/parallax.jpg);
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgb(48, 44, 44);
+}
+
+.main-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  gap: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  margin: 10px 0 10px 0;
+}
+
+#title-content,
+#subtitle-content {
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+  font-weight: 300;
+  border-radius: 0 0 30px 30px;
+}
+
+#title-content {
+  font-weight: 600;
+  border-radius: 50px;
+  margin-top: 100px;
+  font-size: 40px;
+  box-shadow: inset 8px 8px 32px 15px rgba(0, 0, 0, 0.1);
+}
+
+#paragraph-content {
+  font-weight: 100;
+  width: 50vw;
+  padding-bottom: 20px;
+  font-size: 19px;
+}
+
+.about-febre {
+  display: flex;
+  flex-direction: column;
+}
+
+.pulma {
+  font-weight: 400;
+  width: 50vw;
+  padding-bottom: 20px;
+  font-size: 20px;
+  color: rgb(255, 255, 96);
+  opacity: 0.8;
+}
+
+.pulma-subtitle {
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+  color: rgb(255, 255, 96);
+}
+
+.sono {
+  font-weight: 400;
+  width: 50vw;
+  padding-bottom: 20px;
+  font-size: 20px;
+  color: #d84e93;
+  opacity: 0.9;
+}
+
+.sono-subtitle {
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+  color: #d84e93;
+}
+
+.iframe-spotify1 {
+  width: 50%;
+  display: flex;
+  margin: auto;
+}
+
+.iframe-container {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--grey);
+}
+
+.iframe-spotify {
+  width: 90%;
+  height: 61vh;
+  margin: 50px;
+}
+
+.fa-spotify {
+  font-size: 50px;
+}
+
+.parallax-spotify {
+  background-image: url(../img/parallax2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 1000px;
+  background-color: rgb(32, 45, 58);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+}
+
+.back-to-top {
+  width: 40px;
+  height: 40px;
+  position: fixed; /* Fixa a seta na tela */
+  bottom: 40px; /* Distância da seta em relação ao fundo */
+  right: 20px; /* Distância da seta em relação à direita */
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease;
+  font-size: 24px;
+  display: none; /* Inicialmente oculto */
+}
+
+.back-to-top i {
+  font-size: 20px;
+  position: relative;
+  bottom: 4px;
+}
+
+.back-to-top:hover {
+  background-color: #555;
+}
+
+@media (max-width: 549px) {
+  .hamburger {
+    display: block; /* Exibe o botão apenas em dispositivos móveis */
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    margin-right: 15px;
+  }
+
+  .nav-hidden-link {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-ul.open {
+    opacity: 1;
+    margin-top: 6px;
+  }
+
+  .nav-ul.open a {
+    font-size: 18px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+  }
+
+  .nav-ul li {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .nav-ul-desktop {
+    display: none;
+  }
+}
