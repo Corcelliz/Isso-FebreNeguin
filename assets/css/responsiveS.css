@@ -43,6 +43,14 @@
   #paragraph-content-speak {
     width: 90%;
   }
+
+  .sementinha-parallax {
+    background-position: center ;
+  }
+
+  .parallax-spotify {
+    background-position: center ;
+  }
 }
 
 @media screen and (max-width: 768px) {
