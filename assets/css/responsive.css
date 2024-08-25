@@ -4,10 +4,6 @@
     height: 100%;
   }
 
-  .nav-hidden {
-    display: none;
-  }
-
   #title-content {
     width: 70%;
     padding: 10px;
@@ -63,8 +59,8 @@
   }
 
   .parallax-container {
-    background-position: center ;
-    height: 450px;
+    background-position: center top;
+    height: 400px;
   }
 
   .parallax-spotify {
