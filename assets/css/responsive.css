@@ -56,6 +56,10 @@
   .iframe-spotify1 {
     width: 90%;
   }
+  .parallax-spotify,
+  .parallax-container {
+    background-size: cover;
+  }
 }
 
 @media screen and (max-width: 768px) {
