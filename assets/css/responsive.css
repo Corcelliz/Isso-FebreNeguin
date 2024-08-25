@@ -58,7 +58,7 @@
   }
   .parallax-spotify,
   .parallax-container {
-    background-size: auto;
+    background-position: center top;
   }
 }
 
