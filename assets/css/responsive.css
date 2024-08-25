@@ -1,6 +1,7 @@
 @media screen and (max-width: 480px) {
   .main-content {
     gap: 30px;
+    height: 100%;
   }
 
   #title-content {
@@ -55,10 +56,15 @@
 
   .iframe-spotify1 {
     width: 90%;
-  }
-  .parallax-spotify,
+  } 
+
   .parallax-container {
     background-position: center top;
+    height: 400px;
+  }
+
+  .parallax-spotify {
+    background-position: center bottom;
   }
 }
 
