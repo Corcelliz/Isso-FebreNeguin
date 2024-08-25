@@ -45,11 +45,13 @@
   }
 
   .sementinha-parallax {
-    background-position: center ;
+    background-position: center;
+    height: 600px;
   }
 
   .parallax-spotify {
-    background-position: center ;
+    background-position: center;
+    height: 600;
   }
 }
 

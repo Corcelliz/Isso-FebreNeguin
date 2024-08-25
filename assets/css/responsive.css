@@ -4,6 +4,10 @@
     height: 100%;
   }
 
+  .nav-hidden {
+    display: none;
+  }
+
   #title-content {
     width: 70%;
     padding: 10px;
@@ -56,11 +60,11 @@
 
   .iframe-spotify1 {
     width: 90%;
-  } 
+  }
 
   .parallax-container {
-    background-position: center top;
-    height: 400px;
+    background-position: center ;
+    height: 450px;
   }
 
   .parallax-spotify {

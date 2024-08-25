@@ -10,15 +10,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Esconde/Mostra o nav ao rolar a página
 window.addEventListener("scroll", function () {
-  let scrollTop = document.documentElement.scrollTop;
+  if (this.window.innerWidth > 480) {
+    let scrollTop = document.documentElement.scrollTop;
 
-  if (scrollTop > lastScrollTop) {
-    nav.classList.add("nav-hidden");
-  } else {
-    nav.classList.remove("nav-hidden");
+    if (scrollTop > lastScrollTop) {
+      nav.classList.add("nav-hidden");
+    } else {
+      nav.classList.remove("nav-hidden");
+    }
+
+    lastScrollTop = scrollTop;
   }
-
-  lastScrollTop = scrollTop;
 });
 
 // Exibe/Esconde o menu ao clicar no botão hambúrguer
